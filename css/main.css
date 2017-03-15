@@ -1,0 +1,40 @@
+body{
+	font-family: 'Karla', monospace;
+	font-size: 20px;
+
+}
+header{
+	margin-top: 30px ;
+	font-family: 'Inconsolata', monospace;
+	font-weight: 700;	
+}
+header ul{
+	list-style: none;
+}
+header ul li{
+	display: inline-block;
+	margin-right: 30px;
+}
+header ul li a{
+	text-decoration: underline;
+}
+.side_nav ul{
+	text-align : right;
+}
+
+footer ul{
+	font-family: 'Inconsolata' , monospace;
+	font-weight: 700;
+	list-style: none;
+	text-align: center;
+}
+footer li{
+
+	display: inline-block;
+}
+footer a{
+	text-decoration: none;
+}
+li:hover{
+	text-decoration: line-through; 
+}
