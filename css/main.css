@@ -40,6 +40,11 @@ header ul li a{
 			 background: #99CCCC;
 			 opacity: 0.7;
 	}
+
+/* Current work*/
+.curr-work{
+	margin-top : 50px;
+}
 /* Card UI*/
 .card{
 	border-radius: 5px;
