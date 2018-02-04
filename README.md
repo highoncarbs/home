@@ -2,6 +2,6 @@
 
 Visit the live version here : http://sethia.ml
 
-The website was built using HTML and CSS and hosted on Digital Ocean droplet. Skeleton is used as the base responsive css template. Karla font from Google Fonts.
+The website is built using [flake]('https://github.com/padamsethia/flake') and hosted on Github Pages. Bulma CSS is used as the base responsive css template. Eczar and Work Sans typefaces from Google Fonts.
 
 Go Static⚡️!
