@@ -17,7 +17,7 @@ def index():
     return render_template('index.html'), 200
 
 
-@flake.route('/project.html')
+@flake.route('/project/')
 def project():
     project = [
         page for page in pages if 'date' in page.meta and page.meta['type'] == 'work']
@@ -26,7 +26,7 @@ def project():
     return render_template('project.html', pages=sorted_posts), 200
 
 
-@flake.route('/blog.html')
+@flake.route('/blog/')
 def blog():
     posts = [
         page for page in pages if 'date' in page.meta and page.meta['type'] == 'blog']
