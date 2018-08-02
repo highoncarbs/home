@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2 class="is-size-1 is-size-2-mobile 	
+has-text-warning" style="font-weight: 900; ">Some Wisdom .</h2>
+<br>
+<br>
+<div class="post has-text-black ">
+	{% for page in pages %}
+	<div class="columns is-multiline is-variable is-0">
+		<div class="column is-3" >
+	<p class="extra is-size-5 is-size-5-touch has-text-grey date is-inline-block" ">{{ page.date }}</p>
+		</div>
+		<div class="column is-9">
+		<a href="{{ url_for('page' , path=page.path )}}" class="is-size-3 is-size-4-touch is-inline-block has-text-warning" style="font-weight: 900; margin-top:-5px;">{{ page.title }}</a>
+		</div>
+		</div>
+	<br>
+	{% endfor %}
+</div>
+
+{% endblock %}

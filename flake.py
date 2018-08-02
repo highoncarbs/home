@@ -9,8 +9,8 @@ import errno
 if __name__ == '__main__':
 
     if len(sys.argv) > 1 and sys.argv[1] == "--help" or sys.argv[1] == "-h":
-      # Print helper function docs
-      print('''
+        # Print helper function docs
+        print('''
         flake v0.1\n
         Padam Sethia <padamsethia5@gmail.com>\n
         Static Site generator written with flask and python.\n
@@ -33,7 +33,9 @@ if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == "new":
         now = datetime.datetime.now()
         now = now.strftime("%-d %b %Y")
-        title = str(raw_input("Enter title for the post :  "))
+        title = str(input("Enter title for the post :  "))
+        post_type = str(input("Post Type (blog / work) :  "))
+
         filename = "./flake/pages/" + title + ".md"
         if not os.path.exists(os.path.dirname(filename)):
             try:
@@ -42,19 +44,19 @@ if __name__ == '__main__':
                 if exc.errno != errno.EEXIST:
                     raise
         with open(filename, "w") as f:
-            f.write("title: " + title + "\ndate: " + now + "\n\nWrite here.")
+            f.write("title: " + title + "\ndate: " + now + "\ntype: " + post_type + "\n\nWrite here.")
 
     # Update flake from base repo
     if len(sys.argv) > 1 and sys.argv[1] == "update":
         # Needs fixing
-	pass
+        pass
 
-    if len(sys.argv) > 1 and sys.argv[1] == "run":
-        '''
-        Runs a local server with website
-        '''
-        port = int(sys.argv[2])
-        flake.run(debug=False , port = port)
+    # if len(sys.argv) > 1 and sys.argv[1] == "run":
+    #     '''
+    #     Runs a local server with website
+    #     '''
+    #     port = int(sys.argv[2])
+    #     flake.run(debug=False, port=port)
 
     if len(sys.argv) > 1 and sys.argv[1] == "run" and sys.argv[2] == "debug":
         '''

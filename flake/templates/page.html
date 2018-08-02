@@ -1,20 +1,25 @@
 {% extends 'base.html' %}
 {% block content %}
-	<div class="xnavbar is-size-5">
-		<p><a href="{{ url_for('index') }}"><i class="material-icons">keyboard_arrow_left</i> TO HOME </a></p>
-	</div>
-	<div class="roll animated fadeIn">
-		<p class="date is-size-5">{{ page.date }}</p>
-		<h2 class="is-size-3" >{{ page.title }}</h2>
-		<div class="content  columns ">
-			<div class="column is-half-tablet is-size-5">
-		    {{ page.html|safe }}
-		</div>
 
-		</div>
-		<div class="share columns is-one-third is-size-5">
-			
-		</div>
-		
+<div class="post has-text-black">
+		<p><span class="extra is-size-5 is-size-5-touch has-text-grey date is-inline-block" >{{ page.date }}</span>
+<br>
+	<h2 class="is-size-3" style="font-weight: 900;">{{ page.title }}</h2>
+	<br>
+	{% if 'role' in page.meta %}
+	<div class="notification is-warning is-narrow has-text-black" style="font-family: 'Roboto Mono';">
+		<span ><span style="font-weight: 700;">ROLE :</span><span style="font-weight: 400; padding-left: 1rem;">{{ page.role }}</span></span>
+		<br>
+		<span ><span style="font-weight: 700;">FOR  :</span><span style="font-weight: 400; padding-left: 1rem;">{{ page.for }}</span></span>
+		<br>
+		<span ><span style="font-weight: 700;">DEMO :</span><a  href="{{ page.demo }}"><span style="font-weight: 400; padding-left: 1rem;text-decoration: underline">{{ page.demo }}</span></a></span>
 	</div>
-{% endblock content %}
+	{% endif %}
+	<h3 class="is-size-3 is-size-4-touch" style="font-weight: 900;" >{{ page.summ }}</h3>
+	<br>
+	<div class="post-body is-size-5 is-size-6-touch" style="font-weight: 400;">
+		{{ page.html|safe }}
+	</div>
+</div>
+
+{% endblock %}
