@@ -62,4 +62,4 @@ if __name__ == '__main__':
         '''
         Runs a local server with website with debug
         '''
-        flake.run(debug=True)
+        flake.run(port=8080 ,debug=True)
