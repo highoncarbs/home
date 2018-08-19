@@ -54,3 +54,7 @@ body{
 .back:hover{
 	color: black;
 }
+.grow { transition: all .2s ease-in-out;
+border-radius: 0; }
+.grow:hover { transform: scale(1.1);
+	}

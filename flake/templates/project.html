@@ -4,58 +4,78 @@
 <h2 class="is-size-1 is-size-2-touch has-text-info" style="font-weight: 900; ">Some Work .</h2>
 <br>
 <br>
-<!--
-<div class="columns is-variable is-4 is-multiline">
-	<div class="column is-half">
-		<div class="notification  is-light" style="border-radius: 0px;">
-			<p class="extra is-size-5 has-text-grey date" >{{ page.date }}</p>
-	<br>
-	<a href="{{ url_for('page' , path=page.path )}}"><span class="is-size-3" style="font-weight: 900; ">{{ page.title }}</span></a>
-		<br>
-		<br>
-		<div class="notification is-warning is-narrow has-text-black" style="font-family: 'Roboto Mono">
-		<span ><span style="font-weight: 700;">ROLE :</span><span style="font-weight: 400; padding-left: 1rem;">{{ page.role }}</span></span>
-		<br>
-		<span ><span style="font-weight: 700;">FOR :</span><span style="font-weight: 400; padding-left: 1rem;">{{ page.for }}</span></span>
-		<br>
-		<span ><span style="font-weight: 700;">DEMO :</span><a href="{{ page.demo }}"><span style="font-weight: 400; padding-left: 1rem;text-decoration: underline">{{ page.demo }}</span></a></span>
+<div class="columns ">
+<div class="column">
 
+	<a href="https://github.com/PadamSethia/peep" >
+		<div class="notification is-black grow " style="padding-right: 0;padding-bottom: 0;">
+		<p class="is-size-5 has-text-grey-light">PEEP</p>
+		<br>
+		<h2 class="is-size-3" style="font-weight: bold">
+			Communication<br>management<br>system
+		</h2>
+		<br>
+		<br>
+			<img src="{{ url_for('static' , filename="images/peep.png" )}}">
 		</div>
-		<p class="extra is-size-5 date" >{{ page.summ }}</p>
+	</a>
 	<br>
 	<br>
-	<a href="{{ url_for('page' , path=page.path )}}" style="font-weight: 700; text-decoration: none " >READ MORE .</a>
-	</div>
-	<br>
-	</div>
+		
+	<a href="https://github.com/PadamSethia/lumberjack" >
+		<div class="notification is-warning grow " style="padding-right: 0;padding-bottom: 0;">
+		<p class="is-size-5 has-text-black">LUMBERJACK</p>
+		<br>
+		<h2 class="is-size-3" style="font-weight: bold">
+			Log<br>Analysis<br>Platform
+		</h2>
+		<br>
+		<br>
+		<br>
+		</div>
+	</a>
 
 </div>
-!-->
-<div class="post has-text-black">
-	{% for page in pages %}
-	<div class="notification is-light">
 
-	<p class="extra is-size-5 has-text-grey date" >{{ page.date }}</p>
-	<br>
-	<a href="{{ url_for('page' , path=page.path )}}"><span class="is-size-3" style="font-weight: 900; ">{{ page.title }}</span></a>
+<div class="column">
+	<a href="https://github.com/PadamSethia/shorty" >
+		<div class="notification is-info grow " style="padding-right: 0;padding-bottom: 0;">
+		<p class="is-size-5 has-text-white">SHORTY</p>
+		<br>
+		<h2 class="is-size-3" style="font-weight: bold">
+			URL<br>Shortner<br>Analytics
+		</h2>
 		<br>
 		<br>
-		<div class="notification is-warning is-narrow has-text-black" style="font-family: 'Roboto Mono">
-		<span ><span style="font-weight: 700;">ROLE :</span><span style="font-weight: 400; padding-left: 1rem;">{{ page.role }}</span></span>
-		<br>
-		<span ><span style="font-weight: 700;">FOR :</span><span style="font-weight: 400; padding-left: 1rem;">{{ page.for }}</span></span>
-		<br>
-		<span ><span style="font-weight: 700;">DEMO :</span><a href="{{ page.demo }}"><span style="font-weight: 400; padding-left: 1rem;text-decoration: underline">{{ page.demo }}</span></a></span>
-
 		</div>
-	<p class="extra is-size-5 date" >{{ page.summ }}</p>
+	</a>
 	<br>
 	<br>
-	<a href="{{ url_for('page' , path=page.path )}}" style="font-weight: 700; text-decoration: none " >READ MORE .</a>
-	</div>
+	<a href="https://github.com/PadamSethia/flake" >
+		<div class="notification is-light grow " style="padding-right: 0;padding-bottom: 0;">
+		<p class="is-size-5 ">FLAKE</p>
+		<br>
+		<h2 class="is-size-3" style="font-weight: bold">
+			Static<br>Site<br>Generator
+		</h2>
+		<br>
+		<br>
+		</div>
+	</a>
 	<br>
-	{% endfor %}
-
+	<br>
+	<a href="https://github.com/fumen/kihon" >
+		<div class="notification is-black grow " style="padding-right: 0;padding-bottom: 0;">
+		<p class="is-size-5 ">FUMEN</p>
+		<br>
+		<h2 class="is-size-3" style="font-weight: bold">
+			Music<br>Streaming<br>
+		</h2>
+		<br>
+		<br>
+		</div>
+	</a>
+</div>
 </div>
 	<br>
 
