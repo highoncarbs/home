@@ -7,6 +7,6 @@ This past week has found me working on an old abandoned idea , a static-site gen
 >Cause Pythonistas hate ruby (aka Jekyll)
 
 This website has been built using flake the same ol' idea I was talking about.
-If interested take a peep [here](https://github.com/PadamSethia/Hafta). It is still under development.
+If interested take a peep [here](https://github.com/PadamSethia/flake). It is still under development.
 
 Bye!

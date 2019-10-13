@@ -4,7 +4,7 @@
 <head>
     <title>Padam Sethia</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static' , filename='css/main.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Cardo:400,400i|DM+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,9 +22,9 @@
                     <p class="is-size-3">Padam Sethia </p>
                     <nav class="level is-mobile sans is-size-5 ">
                         <div class="level-left">
-                            <a href="index.html" class="level-item has-text-black ">Home</a>
-                            <a href="blog.html" class="level-item has-text-black">Scribbles</a>
-                            <a href="project.html" class="level-item has-text-black">Projects</a>
+                            <a href="{{url_for('index')}}" class="level-item has-text-black ">Home</a>
+                            <a href="{{ url_for('blog')}}" class="level-item has-text-black">Scribbles</a>
+                            <a href="{{url_for('project')}}" class="level-item has-text-black">Projects</a>
 
                         </div>
                         <div class="level-right">
@@ -48,24 +48,8 @@
                     </nav>
                     <hr height="1px;">
                                        <br>
-                    
-
-<h2 class="is-size-3 is-size-3-mobile 	
-has-text-black"> <strike>not so</strike> Random Scribbles</h2>
-<br>
-<br>
-<div class="post has-text-black ">
-	
-
-	<p class="sans has-text-weight-bold">( 1 Feb 2018 )</p>
-	<a href="oi/index.html" class="cardo is-size-3 has-text-black"
-		style="font-weight: 900; margin-top:-5px;">Oi!</a>
-</div>
-<br>
-
-</div>
-
-
+                    {% block content %}
+                    {% endblock %}
                 </div>
 
 

@@ -3,10 +3,11 @@
 from flake.flake import *
 import datetime
 import os
-import errno
+# import err
 
 
 if __name__ == '__main__':
+    flake.run(port=8080 ,debug=True)
 
     if len(sys.argv) > 1 and sys.argv[1] == "--help" or sys.argv[1] == "-h":
         # Print helper function docs
@@ -58,8 +59,7 @@ if __name__ == '__main__':
     #     port = int(sys.argv[2])
     #     flake.run(debug=False, port=port)
 
-    if len(sys.argv) > 1 and sys.argv[1] == "run" and sys.argv[2] == "debug":
-        '''
-        Runs a local server with website with debug
-        '''
-        flake.run(port=8080 ,debug=True)
+    # if len(sys.argv) > 1 and sys.argv[1] == "run" and sys.argv[2] == "debug":
+    #     '''
+    #     Runs a local server with website with debug
+    #     '''

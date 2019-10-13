@@ -40,3 +40,6 @@ def blog():
 def page(path):
     page = pages.get_or_404(path)
     return render_template('page.html', page=page)
+
+if __name__ == "__main__":
+    flake.run( debug=True, port=5050)

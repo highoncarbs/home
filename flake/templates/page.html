@@ -1,23 +1,12 @@
-{% extends 'base.html' %}
+{% extends 'base2.html' %}
 {% block content %}
 
 <div class="post has-text-black">
-		<p><span class="extra is-size-5 is-size-5-touch has-text-grey date is-inline-block" >{{ page.date }}</span>
-<br>
-	<h2 class="is-size-3" style="font-weight: 900;">{{ page.title }}</h2>
+	<p class="sans has-text-weight-bold">( {{ page.date }} )</p>
+
+	<h2 class="is-size-3 cardo has-text-weight-bold" >{{ page.title }}</h2>
 	<br>
-	{% if 'role' in page.meta %}
-	<div class="notification is-warning is-narrow has-text-black" style="font-family: 'Roboto Mono';">
-		<span ><span style="font-weight: 700;">ROLE :</span><span style="font-weight: 400; padding-left: 1rem;">{{ page.role }}</span></span>
-		<br>
-		<span ><span style="font-weight: 700;">FOR  :</span><span style="font-weight: 400; padding-left: 1rem;">{{ page.for }}</span></span>
-		<br>
-		<span ><span style="font-weight: 700;">DEMO :</span><a  href="{{ page.demo }}"><span style="font-weight: 400; padding-left: 1rem;text-decoration: underline">{{ page.demo }}</span></a></span>
-	</div>
-	{% endif %}
-	<h3 class="is-size-3 is-size-4-touch" style="font-weight: 900;" >{{ page.summ }}</h3>
-	<br>
-	<div class="post-body is-size-5 is-size-6-touch" style="font-weight: 400;">
+	<div class=" sans is-size-5">
 		{{ page.html|safe }}
 	</div>
 </div>
