@@ -1,0 +1,20 @@
+{
+  "name": "home",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.4.0",
+    "bulma": "^0.8.0",
+    "gridsome": "^0.7.0",
+    "gridsome-plugin-netlify-cms": "^1.0.9",
+    "netlify-cms": "^2.9.7",
+    "typeface-eb-garamond": "0.0.72",
+    "typeface-ibm-plex-mono": "0.0.61",
+    "typeface-inter": "^3.10.0"
+  }
+}
