@@ -1,7 +1,7 @@
 ---
-title: TEstign ofsnd
-excerpt: iodsfnj
+title: Transforming Indian MSE's with technology
+excerpt: Growth-hacking
 date: 2019-12-16T11:15:30.979Z
-tags: okok
+tags: DRAFT
 ---
-sdfgbkjm
+In draft mode
