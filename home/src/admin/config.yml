@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: padamsethia/padamsethia.github.io
+  repo: padamsethia/home
 
 media_folder: "static/uploads"
 public_folder: "/uploads"

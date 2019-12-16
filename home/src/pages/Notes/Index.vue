@@ -11,7 +11,7 @@
         <div v-for="post in $page.posts.edges" :key="post.id" style="margin-top:2rem;">
           <g-link :to="post.node.path">
           <p class="title is-size-5" >{{ post.node.title }}</p>
-          <p class="subtitle has-text-weight-normal is-size-6">{{ post.node.date }} <span v-if="post.node.tags"> - <span class="is-warning tag has-text-weight-semibold" v-html="post.node.tags"  /> </span> </p>
+          <p class="subtitle has-text-weight-normal is-size-6">{{ post.node.date }} <span v-if="post.node.tags == 'DRAFT'"> - <span class="is-warning tag has-text-weight-semibold" v-html="post.node.tags"  /> </span> </p>
         </g-link>
         </div>
       </div>
