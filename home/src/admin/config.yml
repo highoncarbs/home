@@ -8,7 +8,7 @@ public_folder: "/uploads"
 collections:
   - name: "posts"
     label: "Posts"
-    folder: "posts"
+    folder: "./home/posts"
     create: true
     slug: "{{slug}}"
     fields:
