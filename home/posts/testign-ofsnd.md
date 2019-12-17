@@ -22,9 +22,9 @@ Apart from the usual boom in B2B websites such as Indiamart , Alibaba and a few 
 Overall there are 3 major verticals where we can use technology for growth - 
 
 1. Awareness
-
 2. Sales Channels
-
 3. Operations
+
+
 
 ~ more coming soon
