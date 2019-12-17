@@ -17,6 +17,8 @@ But boss ! What are MSE's  -
 > A medium enterprise is an enterprise where the investment in plant and machinery is more than Rs.5 crore but does not exceed Rs.10 crore.
 
 These enterprises form the majority of businesses in Indian , mostly family owned which have not been able to make the tech work for them. 
+
+
 Apart from the usual boom in B2B websites such as Indiamart , Alibaba and a few business listings sites.  Most of these MSE's have not registered elsewhere , and are no where near making the use of the tech to it's fullest potential.
 
 Overall there are 3 major verticals where we can use technology for growth - 
@@ -24,7 +26,5 @@ Overall there are 3 major verticals where we can use technology for growth -
 1. Awareness
 2. Sales Channels
 3. Operations
-
-
 
 ~ more coming soon
