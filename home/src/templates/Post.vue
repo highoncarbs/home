@@ -1,11 +1,12 @@
 <template>
   <Layout class="sans">
     <br />
-    <div class="columns is-size-5">
-      <div class="column is-7">
+    <div class="columns ">
+      <div class="column is-7 ">
         <div style="margin-top:2rem;">
-          <p class="title is-size-5">{{ $page.post.title }}</p>
-          <p class="subtitle has-text-weight-normal is-size-6">
+          <p class="title is-size-1 has-text-weight-bold">{{ $page.post.title }}</p>
+
+          <p class="subtitle has-text-weight-normal has-text-grey is-size-6">
             {{ getDateString($page.post.date) }}
             <span v-if="$page.post.tags">
               -
@@ -14,7 +15,7 @@
           </p>
         </div>
         <br />
-        <p class="serif" v-html="$page.post.content" />
+        <div class="serif" v-html="$page.post.content" />
       </div>
     </div>
   </Layout>

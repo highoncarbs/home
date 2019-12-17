@@ -15,6 +15,7 @@
     "netlify-cms": "^2.9.7",
     "typeface-eb-garamond": "0.0.72",
     "typeface-ibm-plex-mono": "0.0.61",
-    "typeface-inter": "^3.10.0"
+    "typeface-inter": "^3.10.0",
+    "typeface-roboto-mono": "0.0.75"
   }
 }

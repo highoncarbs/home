@@ -5,9 +5,9 @@
         <div class="columns">
           <div class="column is-3">
             <h2 class="has-text-weight-semibold">Home of HighOnCarbs</h2>
-            <p class="is-size-6">a.k.a Padam Sethia</p>
-            <a href="https://twitter.com/marwariboi" class="has-text-dark is-size-6">Tweets @Marwariboi</a>
-            <br />
+            <!-- <p class="is-size-6">a.k.a Padam Sethia</p>
+            <a href="https://twitter.com/marwariboi" class="has-text-dark is-size-6">Tweets @Marwariboi</a> -->
+            
             
             <div class="level is-mobile" style="margin-top:1rem;">
               <div class="level-left ">
@@ -17,12 +17,11 @@
               </div>
             </div>
           </div>
-          <div class="column is-3">
+          <div class="column is-3" v-if="onpage.path == '/'">
             <h2>
               Tinkers with bits & pixels to make
               <br />Indian Businesses more efficeint
             </h2>
-            <br />
           </div>
         </div>
       </header>
