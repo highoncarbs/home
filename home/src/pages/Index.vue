@@ -5,10 +5,10 @@
       Projects
       <span class="has-text-grey">/ Selected</span>
     </h2>
-    <div class="columns is-size-5">
+    <div class="columns is-size-6">
       <div class="column is-3">
         <div style="margin-top:2rem;">
-          <p class="has-text-weight-bold">Noice</p>
+          <p class="has-text-weight-bold is-size-5">Noice</p>
 
           <p class="serif">
             Helps Indian MSE's to develop
@@ -18,10 +18,10 @@
           <a href="https://github.com/padamsethia/noice" class="is-size-6 is-text">View Project</a>
         </div>
         <div style="margin-top:2rem;">
-          <p class="has-text-weight-bold">Automato</p>
+          <p class="has-text-weight-bold is-size-5">Automato</p>
 
           <p
-            class="serif"
+            class="serif "
           >Automate marketing with Whatsapp , built in scrapers for Google and Justdial</p>
           <hr />
           <a href="https://github.com/padamsethia/automato" class="is-size-6 is-text">View Project</a>
@@ -29,14 +29,14 @@
       </div>
       <div class="column is-3">
         <div style="margin-top:2rem;">
-          <p class="has-text-weight-bold">Hafta</p>
+          <p class="has-text-weight-bold is-size-5">Hafta</p>
 
           <p class="serif">Simple Payroll & HR management for Indian MSE's</p>
           <hr />
           <a href="https://github.com/padamsethia/hafta" class="is-size-6 is-text">View Project</a>
         </div>
         <div style="margin-top:2rem;">
-          <p class="has-text-weight-bold">Shorty</p>
+          <p class="has-text-weight-bold is-size-5">Shorty</p>
 
           <p class="serif">Url shortner service with anayltics and tracking for marketing campaigns</p>
           <hr />
@@ -63,7 +63,7 @@
 
 <page-query>
 query Posts {
-  posts: allPost(limit: 5) {
+  posts: allPost{
     edges {
       node {
         id

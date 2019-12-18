@@ -3,7 +3,7 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 
-import 'typeface-eb-garamond'
+import 'typeface-ibm-plex-mono'
 import 'typeface-inter'
 import '~/assets/main.css'
 

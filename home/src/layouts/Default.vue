@@ -14,7 +14,7 @@
               </div>
             </div>
           </div>
-          <div class="column is-3" v-if="onpage.path == '/'">
+          <div class="column is-3" >
             <h2>
               Tinkers with bits & pixels to make
               <br />Indian Businesses more efficeint
