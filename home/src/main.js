@@ -14,5 +14,9 @@ export default function (Vue, { router, head, isClient }) {
     rel: "stylesheet",
     href: 'https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css'
   })
+  head.link.push({
+    rel: "stylesheet",
+    href: 'https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap'
+  })
 
 }

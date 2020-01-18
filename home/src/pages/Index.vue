@@ -24,7 +24,7 @@
             class="serif "
           >Automate marketing with Whatsapp , built in scrapers for Google and Justdial</p>
           <hr />
-          <a href="https://github.com/padamsethia/automato" class="is-size-6 is-text">View Project</a>
+          <g-link to="/work/automato" class="is-size-6 is-text">View Project</g-link>
         </div>
       </div>
       <div class="column is-3">
