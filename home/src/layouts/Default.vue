@@ -191,10 +191,10 @@
           </a>
         </div>
         <div class="column sans is-6-fullhd is-8-desktop is-offset-1-tablet">
-          <h2 class="is-hidden-tablet title is-size-1-mobile has-text-black">
+          <h2 class="is-hidden-tablet title is-size-1-mobile ">
            NOW PLAYING
           </h2>
-          <h2 class="is-hidden-mobile title has-text-black" style="font-size: 4rem">
+          <h2 class="is-hidden-mobile title" style="font-size: 4rem">
            NOW PLAYING
           </h2>
 
