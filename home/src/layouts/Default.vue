@@ -33,8 +33,9 @@
                   class="card-footer-item has-background-black has-text-white"
                   style="border-radius:0 0 10px 9px; padding: 0.5rem 0rem 0.3rem 0;"
                 >
-                <ClientOnly>
-                  <box-icon name="play" color="white"></box-icon></ClientOnly>
+                  <ClientOnly>
+                    <box-icon name="play" color="white"></box-icon>
+                  </ClientOnly>
                   <span class="has-icon-left modern is-size-5-desktop is-size-6-tablet">PLAY</span>
                 </p>
               </footer>
@@ -61,8 +62,9 @@
                   class="card-footer-item"
                   style="border-radius:0 0 10px 9px; padding: 0.5rem 0rem 0.3rem 0; background-color:#E9B4B0;"
                 >
-                <ClientOnly>
-                  <box-icon name="shopping-bag-alt" type="solid" flip="horizontal" color="#000"></box-icon></ClientOnly>
+                  <ClientOnly>
+                    <box-icon name="shopping-bag-alt" type="solid" flip="horizontal" color="#000"></box-icon>
+                  </ClientOnly>
                   <span
                     class="has-icon-left modern is-size-5-desktop is-size-6-tablet has-text-black"
                   >SHOP</span>
@@ -127,11 +129,14 @@
           <div class="buttons">
             <a href="#radio" class="button is-black modern">
               <ClientOnly>
-              <box-icon name="play" color="white"></box-icon></ClientOnly>
+                <box-icon name="play" color="white"></box-icon>
+              </ClientOnly>
               <span style=" font-family: 'Fivo Sans Modern' " class="has-icon-left">PLAY MY JAM</span>
             </a>
             <a href="https://itminan.in" class="button modern" style="background-color:#E9B4B0;">
-            <ClientOnly>  <box-icon name="shopping-bag-alt" type="solid" flip="horizontal" color="#000"></box-icon></ClientOnly>
+              <ClientOnly>
+                <box-icon name="shopping-bag-alt" type="solid" flip="horizontal" color="#000"></box-icon>
+              </ClientOnly>
               <span style=" font-family: 'Fivo Sans Modern' " class="has-icon-left">SHOP</span>
             </a>
           </div>
@@ -156,7 +161,9 @@
             href="https://www.youtube.com/playlist?list=PL-FOM5JskLGQ0WuEQIJq9kDhhuCxS2fDN"
             class="button is-hidden-tablet is-white modern"
           >
-            <ClientOnly><box-icon name="plus-circle" color="black"></box-icon></ClientOnly>
+            <ClientOnly>
+              <box-icon name="plus-circle" color="black"></box-icon>
+            </ClientOnly>
             <span style=" font-family: 'Fivo Sans Modern' " class="has-icon-left">FOLLOW</span>
           </a>
           <a href="https://www.youtube.com/playlist?list=PL-FOM5JskLGQ0WuEQIJq9kDhhuCxS2fDN">
@@ -172,7 +179,9 @@
                   class="card-footer-item"
                   style="border-radius:0 0 10px 9px; padding: 0.5rem 0rem 0.3rem 0; background-color:#fff;"
                 >
-                 <ClientOnly> <box-icon name="plus-circle" type="solid" flip="horizontal" color="#000"></box-icon></ClientOnly>
+                  <ClientOnly>
+                    <box-icon name="plus-circle" type="solid" flip="horizontal" color="#000"></box-icon>
+                  </ClientOnly>
                   <span
                     class="has-icon-left modern is-size-5-desktop is-size-7-tablet has-text-black"
                   >FOLLOW</span>
@@ -207,21 +216,20 @@
                     <div id="content-grid">
                       <div>
                         <ClientOnly>
-                        <box-icon
-                          color="#fff"
-                          style="margin:15px 0 0 0 "
-                          v-if="music_data[curr_idx].title == item.title"
-                          name="music"
-                        ></box-icon>
-                        <box-icon
-                          style="margin:15px 0 0 0 "
-                          v-else
-                          name="play"
-                          color="#fff"
-                          type="solid"
-                        ></box-icon>
+                          <box-icon
+                            color="#fff"
+                            style="margin:15px 0 0 0 "
+                            v-if="music_data[curr_idx].title == item.title"
+                            name="music"
+                          ></box-icon>
+                          <box-icon
+                            style="margin:15px 0 0 0 "
+                            v-else
+                            name="play"
+                            color="#fff"
+                            type="solid"
+                          ></box-icon>
                         </ClientOnly>
-                        
                       </div>
 
                       <div>
@@ -538,7 +546,7 @@ body {
 
 .title-text {
   font-size: 4rem !important;
-  line-height: 1.125 !important; 
+  line-height: 1.125 !important;
 }
 
 .box-x {
@@ -581,51 +589,20 @@ body {
   border-radius: 7px !important;
 }
 
-#video {
-  grid-area: a;
+@media only screen and (min-width: 1200px) {
+  .title-text {
+    line-height: 1.125rem !important;
+  }
 }
 
-#video-text {
-  grid-area: c;
+@media only screen and (min-width: 992px) {
+  .title-text {
+    line-height: 1.125rem !important;
+  }
 }
-
-#icon {
-  grid-area: q;
-}
-
-#dd {
-  grid-area: r;
-}
-
-#content-grid:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-#playlist {
-  grid-area: b;
-}
-
-#grid {
-  display: grid;
-  grid-template-areas:
-    "a b "
-    "c b";
-}
-
-#content-grid {
-  display: grid;
-  grid-template-columns: 20px repeat(1, 1fr);
-  column-gap: 20px;
-  margin-bottom: 20px;
-}
-
-@media (max-width: 770px) {
-  #grid {
-    grid-template-areas:
-      "a c"
-      "b b";
-    row-gap: 20px;
+@media only screen and (min-width: 768px) {
+  .title-text {
+    line-height: 1.125rem !important;
   }
 }
 

@@ -20,7 +20,7 @@
     <div class="level is-mobile">
       <div class="level-left">
         <div class="level-item">
-          <h2 class="title is-size-1 has-text-weight-medium">Projects</h2>
+          <h2 class="title is-size-1 is-size-2-mobile has-text-weight-medium">Projects</h2>
         </div>
         <g-link to="/work" class="level-item">
           <button class="button is-text has-text-grey">
@@ -118,7 +118,7 @@
     <div class="level is-mobile">
       <div class="level-left">
         <div class="level-item">
-          <h2 class="title is-size-1 has-text-weight-medium">Notes</h2>
+          <h2 class="title is-size-1 is-size-2-mobile has-text-weight-medium">Notes</h2>
         </div>
         <div class="level-item">
           <g-link to="/notes" class="button is-text has-text-grey">
