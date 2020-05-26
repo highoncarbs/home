@@ -1,62 +1,145 @@
 <template>
-  <Layout class="sans">
+  <Layout>
+    <!-- <small class="modern has-text-grey tag" style="margin-bottom: 10px">HIGHONCARBS / PADAM SETHIA</small> -->
+    <h2
+      class="title is-size-1-mobile has-text-weight-medium is-size-0 has-text-black"
+    >I juggle with chars & pixels to make Indian MSMEs efficent AF!</h2>
+    <hr />
+    <h2
+      class="title title-serif is-size-2 has-text-grey"
+    >Currently building program for production & inventory tracking for textile manufacturers</h2>
+
+    <a href="https://twitter.com/highoncaarbs" class="button is-info">
+      <span class="has-icon">Discuss on Twitter</span>
+      <ClientOnly>
+      <box-icon name="twitter" color="white" type="logo"></box-icon></ClientOnly>
+    </a>
+    <hr />
     <br />
-    <h2 style="margin-top:3rem; " class="is-size-5">
-      Projects
-      <span class="has-text-grey">/ Selected</span>
-    </h2>
-    <div class="columns is-size-6">
-      <div class="column is-3">
-        <div style="margin-top:2rem;">
-          <p class="has-text-weight-bold is-size-5">Noice</p>
 
-          <p class="serif">
-            Helps Indian MSE's to develop
-            new products* rapidly
-          </p>
-          <hr />
-          <a href="https://github.com/padamsethia/noice" class="is-size-6 is-text">View Project</a>
+    <div class="level is-mobile">
+      <div class="level-left">
+        <div class="level-item">
+          <h2 class="title is-size-1 has-text-weight-medium">Projects</h2>
         </div>
-        <div style="margin-top:2rem;">
-          <p class="has-text-weight-bold is-size-5">Automato</p>
-
-          <p
-            class="serif "
-          >Automate marketing with Whatsapp , built in scrapers for Google and Justdial</p>
-          <hr />
-          <g-link to="/work/automato" class="is-size-6 is-text">View Project</g-link>
+        <g-link to="/work" class="level-item">
+          <button class="button is-text has-text-grey">
+            <span class="has-icon">View All</span>
+            <ClientOnly>
+            <box-icon type="solid" name="chevron-right-circle" color="grey"></box-icon></ClientOnly>
+          </button>
+        </g-link>
+      </div>
+    </div>
+    <br />
+    <div class="columns is-multiline">
+      <div class="column is-4-fullhd is-6-desktop">
+        <div class="card box-pr has-equal-height">
+          <div class="card-content">
+            <p class="modern is-size-4 has-text-black">AUTOMATO</p>
+            <p class="tag is-info is-light">OPENSOURCE</p>
+            <br />
+            <br />
+            <p class="is-size-5">
+              Marketing Campaigns
+              via Whatsapp.
+              With built in scrapers* for Google & B2B Portals.
+            </p>
+          </div>
+          <div class="card-footer" style="padding: 1rem">
+            <a href="https://github.com/highoncarbs/automato" class="button is-fullwidth">
+              <span>View Project</span>
+              <ClientOnly>
+              <box-icon type="solid" name="right-arrow-alt"></box-icon></ClientOnly>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="column is-3">
-        <div style="margin-top:2rem;">
-          <p class="has-text-weight-bold is-size-5">Hafta</p>
-
-          <p class="serif">Simple Payroll & HR management for Indian MSE's</p>
-          <hr />
-          <a href="https://github.com/padamsethia/hafta" class="is-size-6 is-text">View Project</a>
+      <div class="column is-4-fullhd is-6-desktop">
+        <div class="card box-pr has-equal-height">
+          <div class="card-content">
+            <p class="modern is-size-4 has-text-black">HAFTA</p>
+            <p class="tag is-info is-light">OPENSOURCE</p>
+            <br />
+            <br />
+            <p class="is-size-5">Payroll & HR for MSME's</p>
+          </div>
+          <div class="card-footer" style="padding: 1rem">
+            <a href="https://github.com/highoncarbs/hafta" class="button is-fullwidth">
+              <span>View Project</span>
+              <ClientOnly>
+              <box-icon type="solid" name="right-arrow-alt"></box-icon></ClientOnly>
+            </a>
+          </div>
         </div>
-        <div style="margin-top:2rem;">
-          <p class="has-text-weight-bold is-size-5">Shorty</p>
-
-          <p class="serif">Url shortner service with anayltics and tracking for marketing campaigns</p>
-          <hr />
-          <a href="https://github.com/padamsethia/shorty" class="is-size-6 is-text">View Project</a>
+      </div>
+      <div class="column is-4-fullhd is-6-desktop">
+        <div class="card box-pr has-equal-height">
+          <div class="card-content">
+            <p class="modern is-size-4 has-text-black">STOREFRONT</p>
+            <p class="tag is-info is-light">OPENSOURCE</p>
+            <br />
+            <br />
+            <p
+              class="is-size-5"
+            >Shopify Product upload on steroids. Bulk product uploads to your shopify store.</p>
+          </div>
+          <div class="card-footer" style="padding: 1rem">
+            <a href="https://github.com/highoncarbs/storefront" class="button is-fullwidth">
+              <span>View Project</span>
+              <ClientOnly>
+              <box-icon type="solid" name="right-arrow-alt"></box-icon></ClientOnly>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4-fullhd is-6-desktop">
+        <div class="card box-pr has-equal-height">
+          <div class="card-content">
+            <p class="modern is-size-4 has-text-black">SHORTY</p>
+            <p class="tag is-info is-light">OPENSOURCE</p>
+            <br />
+            <br />
+            <p class="is-size-5">URL Shorter & analytics tool . Built as an alternative to bit.ly.</p>
+          </div>
+          <div class="card-footer" style="padding: 1rem">
+            <a href="https://github.com/highoncarbs/shorty" class="button is-fullwidth">
+              <span>View Project</span>
+              <ClientOnly>
+              <box-icon type="solid" name="right-arrow-alt"></box-icon></ClientOnly>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <h2 style="margin-top:3rem; " class="is-size-5">
-      Notes
-      <span class="has-text-grey">/ Selected</span>
-    </h2>
-    <div class="columns is-size-5">
-      <div class="column is-7">
-        <div v-for="post in $page.posts.edges" :key="post.id" style="margin-top:2rem;">
-          <g-link :to="post.node.path">
-            <p class="title is-size-5">{{ post.node.title }}</p>
-            <p class="subtitle has-text-weight-normal is-size-6">{{ getDateString(post.node.date) }} <span v-if="post.node.tags == 'DRAFT'"> - <span class="is-warning tag has-text-weight-semibold" v-html="post.node.tags"  /> </span> </p>
+    <br />
+    <hr />
+    <br />
+    <div class="level is-mobile">
+      <div class="level-left">
+        <div class="level-item">
+          <h2 class="title is-size-1 has-text-weight-medium">Notes</h2>
+        </div>
+        <div class="level-item">
+          <g-link to="/notes" class="button is-text has-text-grey">
+            <span class="has-icon">View All</span>
+            <ClientOnly>
+            <box-icon type="solid" name="chevron-right-circle" color="grey"></box-icon></ClientOnly>
           </g-link>
         </div>
       </div>
+    </div>
+    <div v-for="post in $page.posts.edges.slice(0 , 5)" :key="post.id" style="margin-top:2rem;">
+      <g-link :to="post.node.path" v-if="post.node.tags != 'draftd'">
+        <p class="title modern has-text-weight-medium is-size-4">{{ post.node.title }}</p>
+        <p class="subtitle has-text-weight-bold has-text-grey is-size-6">
+          {{ getDateString(post.node.date).toUpperCase() }}
+          <span v-if="post.node.tags == 'DRAFT'">
+            -
+            <span class="is-warning tag has-text-weight-semibold" v-html="post.node.tags" />
+          </span>
+        </p>
+      </g-link>
     </div>
   </Layout>
 </template>
@@ -82,17 +165,15 @@ query Posts {
 <script>
 export default {
   metaInfo: {
-    title: 'Home'
+    title: "Home"
   },
-   methods : {
-      getDateString(val){
-          let temp = new Date(String(val))
-          return temp.toDateString()
-      }
+  methods: {
+    getDateString(val) {
+      let temp = new Date(String(val));
+      return temp.toDateString();
+    }
   }
-}
-
-
+};
 </script>
 
 <style>

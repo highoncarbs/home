@@ -1,20 +1,22 @@
 <template>
-  <Layout class="sans">
-    <br />
-
-    <h2 style="margin-top:3rem; " class="is-size-5">
+  <Layout>
+    <h2 class="title is-size-1-mobile has-text-weight-medium is-size-0 has-text-black">
       Notes
-      <span class="has-text-grey">/ All</span>
+      <span class="title-serif">& Scribbles</span>
     </h2>
-    <div class="columns is-size-5">
-      <div class="column is-7">
-        <div v-for="post in $page.posts.edges" :key="post.id" style="margin-top:2rem;">
-          <g-link :to="post.node.path">
-          <p class="title is-size-5" >{{ post.node.title }}</p>
-          <p class="subtitle has-text-weight-normal is-size-6">{{ getDateString(post.node.date) }} <span v-if="post.node.tags == 'DRAFT'"> - <span class="is-warning tag has-text-weight-semibold" v-html="post.node.tags"  /> </span> </p>
-        </g-link>
-        </div>
-      </div>
+    <hr />
+
+    <div v-for="post in $page.posts.edges" :key="post.id" style="margin-top:2rem;">
+      <g-link :to="post.node.path" v-if="post.node.tags != 'draftd'">
+        <p class="title modern has-text-weight-medium is-size-4">{{ post.node.title }}</p>
+        <p class="subtitle has-text-weight-bold has-text-grey is-size-6">
+          {{ getDateString(post.node.date).toUpperCase() }}
+          <span v-if="post.node.tags == 'DRAFT'">
+            -
+            <span class="is-warning tag has-text-weight-semibold" v-html="post.node.tags" />
+          </span>
+        </p>
+      </g-link>
     </div>
   </Layout>
 </template>
@@ -40,13 +42,17 @@ query Posts {
 <script>
 export default {
   metaInfo: {
-    title: 'Notes'
+    title: "Notes"
   },
-  methods : {
-      getDateString(val){
-          let temp = new Date(String(val))
-          return temp.toDateString()
-      }
+  methods: {
+    getDateString(val) {
+      let temp = new Date(String(val));
+      return temp.toLocaleDateString("default", {
+        day: "numeric",
+        month: "short",
+        year: "numeric"
+      });
+    }
   }
-}
+};
 </script>
