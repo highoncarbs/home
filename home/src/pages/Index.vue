@@ -4,7 +4,6 @@
     <h2
       class="is-hidden-tablet title is-size-1-mobile has-text-black"
     >I juggle with chars & pixels to make Indian MSMEs efficent AF!</h2>
-    <hr />
     <h2
       class="is-hidden-mobile title has-text-black" style="font-size: 4rem"
     >I juggle with chars & pixels to make Indian MSMEs efficent AF!</h2>
