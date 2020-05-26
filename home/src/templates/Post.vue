@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h2 class="title modern is-size-2-mobile this-should-be-big has-text-black">{{ $page.post.title }}</h2>
+    <h2 class="title modern is-size-2-mobile is-size-1 has-text-black">{{ $page.post.title }}</h2>
     <p
       class="subtitle has-text-weight-bold has-text-grey is-size-6"
     >{{ getDateString($page.post.date).toUpperCase() }}</p>
