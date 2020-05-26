@@ -2,7 +2,7 @@
   <Layout>
     <!-- <small class="modern has-text-grey tag" style="margin-bottom: 10px">HIGHONCARBS / PADAM SETHIA</small> -->
     <h2
-      class="title is-size-1-mobile has-text-weight-medium is-size-0 has-text-black"
+      class="title is-size-1-mobile has-text-weight-medium title-text has-text-black"
     >I juggle with chars & pixels to make Indian MSMEs efficent AF!</h2>
     <hr />
     <h2

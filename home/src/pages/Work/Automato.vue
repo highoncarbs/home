@@ -20,7 +20,7 @@
           </a>
         </div>
         <hr />
-        <p class="header-text has-text-black is-size-0 has-text-weight-bold" style="z-index:50">
+        <p class="header-text has-text-black title-text has-text-weight-bold" style="z-index:50">
           Let the machine
           <br />do the boring job.
         </p>
@@ -166,7 +166,7 @@ html {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .is-size-0 {
+  .title-text {
     font-size: 3rem;
     line-height: 3.5rem !important;
     font-weight: 900;
@@ -175,7 +175,7 @@ html {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .is-size-0 {
+  .title-text {
     font-size: 4rem;
     line-height: 5rem !important;
     font-weight: 900;
@@ -184,7 +184,7 @@ html {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .is-size-0 {
+  .title-text {
     font-size: 5.5rem;
     line-height: 5.5rem !important;
     font-weight: 900;
@@ -193,7 +193,7 @@ html {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .is-size-0 {
+  .title-text {
     font-size: 6rem;
     line-height: 6rem !important;
     font-weight: 900;
@@ -202,7 +202,7 @@ html {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .is-size-0 {
+  .title-text {
     font-size: 7.5rem;
     line-height: 7.5rem !important;
     font-weight: 900;

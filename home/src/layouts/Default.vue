@@ -182,7 +182,7 @@
           </a>
         </div>
         <div class="column sans is-6-fullhd is-8-desktop is-offset-1-tablet">
-          <h1 class="is-size-0 is-size-1-mobile modern is-uppercase has-text-white">NOW PLAYING</h1>
+          <h1 class="title-text is-size-1-mobile modern is-uppercase has-text-white">NOW PLAYING</h1>
           <p class="has-text-white title">{{music_data[curr_idx].title}}</p>
           <p class="subtitle">{{music_data[curr_idx].desc}}</p>
           <div
@@ -536,7 +536,7 @@ body {
   font-family: "Fivo Sans" !important;
 }
 
-.is-size-0 {
+.title-text {
   font-size: 4rem !important;
   line-height: 1.125 !important; 
 }
