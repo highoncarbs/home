@@ -33,8 +33,9 @@
                   class="card-footer-item has-background-black has-text-white"
                   style="border-radius:0 0 10px 9px; padding: 0.5rem 0rem 0.3rem 0;"
                 >
-                <ClientOnly>
-                  <box-icon name="play" color="white"></box-icon></ClientOnly>
+                  <ClientOnly>
+                    <box-icon name="play" color="white"></box-icon>
+                  </ClientOnly>
                   <span class="has-icon-left modern is-size-5-desktop is-size-6-tablet">PLAY</span>
                 </p>
               </footer>
@@ -61,8 +62,9 @@
                   class="card-footer-item"
                   style="border-radius:0 0 10px 9px; padding: 0.5rem 0rem 0.3rem 0; background-color:#E9B4B0;"
                 >
-                <ClientOnly>
-                  <box-icon name="shopping-bag-alt" type="solid" flip="horizontal" color="#000"></box-icon></ClientOnly>
+                  <ClientOnly>
+                    <box-icon name="shopping-bag-alt" type="solid" flip="horizontal" color="#000"></box-icon>
+                  </ClientOnly>
                   <span
                     class="has-icon-left modern is-size-5-desktop is-size-6-tablet has-text-black"
                   >SHOP</span>
@@ -127,11 +129,14 @@
           <div class="buttons">
             <a href="#radio" class="button is-black modern">
               <ClientOnly>
-              <box-icon name="play" color="white"></box-icon></ClientOnly>
+                <box-icon name="play" color="white"></box-icon>
+              </ClientOnly>
               <span style=" font-family: 'Fivo Sans Modern' " class="has-icon-left">PLAY MY JAM</span>
             </a>
             <a href="https://itminan.in" class="button modern" style="background-color:#E9B4B0;">
-            <ClientOnly>  <box-icon name="shopping-bag-alt" type="solid" flip="horizontal" color="#000"></box-icon></ClientOnly>
+              <ClientOnly>
+                <box-icon name="shopping-bag-alt" type="solid" flip="horizontal" color="#000"></box-icon>
+              </ClientOnly>
               <span style=" font-family: 'Fivo Sans Modern' " class="has-icon-left">SHOP</span>
             </a>
           </div>
@@ -156,7 +161,9 @@
             href="https://www.youtube.com/playlist?list=PL-FOM5JskLGQ0WuEQIJq9kDhhuCxS2fDN"
             class="button is-hidden-tablet is-white modern"
           >
-            <ClientOnly><box-icon name="plus-circle" color="black"></box-icon></ClientOnly>
+            <ClientOnly>
+              <box-icon name="plus-circle" color="black"></box-icon>
+            </ClientOnly>
             <span style=" font-family: 'Fivo Sans Modern' " class="has-icon-left">FOLLOW</span>
           </a>
           <a href="https://www.youtube.com/playlist?list=PL-FOM5JskLGQ0WuEQIJq9kDhhuCxS2fDN">
@@ -172,7 +179,9 @@
                   class="card-footer-item"
                   style="border-radius:0 0 10px 9px; padding: 0.5rem 0rem 0.3rem 0; background-color:#fff;"
                 >
-                 <ClientOnly> <box-icon name="plus-circle" type="solid" flip="horizontal" color="#000"></box-icon></ClientOnly>
+                  <ClientOnly>
+                    <box-icon name="plus-circle" type="solid" flip="horizontal" color="#000"></box-icon>
+                  </ClientOnly>
                   <span
                     class="has-icon-left modern is-size-5-desktop is-size-7-tablet has-text-black"
                   >FOLLOW</span>
@@ -182,7 +191,13 @@
           </a>
         </div>
         <div class="column sans is-6-fullhd is-8-desktop is-offset-1-tablet">
-          <h1 class="is-size-0 is-size-1-mobile modern is-uppercase has-text-white">NOW PLAYING</h1>
+          <h2 class="is-hidden-tablet title is-size-1-mobile has-text-black">
+           NOW PLAYING
+          </h2>
+          <h2 class="is-hidden-mobile title has-text-black" style="font-size: 4rem">
+           NOW PLAYING
+          </h2>
+
           <p class="has-text-white title">{{music_data[curr_idx].title}}</p>
           <p class="subtitle">{{music_data[curr_idx].desc}}</p>
           <div
@@ -207,21 +222,20 @@
                     <div id="content-grid">
                       <div>
                         <ClientOnly>
-                        <box-icon
-                          color="#fff"
-                          style="margin:15px 0 0 0 "
-                          v-if="music_data[curr_idx].title == item.title"
-                          name="music"
-                        ></box-icon>
-                        <box-icon
-                          style="margin:15px 0 0 0 "
-                          v-else
-                          name="play"
-                          color="#fff"
-                          type="solid"
-                        ></box-icon>
+                          <box-icon
+                            color="#fff"
+                            style="margin:15px 0 0 0 "
+                            v-if="music_data[curr_idx].title == item.title"
+                            name="music"
+                          ></box-icon>
+                          <box-icon
+                            style="margin:15px 0 0 0 "
+                            v-else
+                            name="play"
+                            color="#fff"
+                            type="solid"
+                          ></box-icon>
                         </ClientOnly>
-                        
                       </div>
 
                       <div>
@@ -538,7 +552,6 @@ body {
 
 .is-size-0 {
   font-size: 4rem !important;
-  
 }
 
 .box-x {

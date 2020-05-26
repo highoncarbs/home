@@ -4,7 +4,6 @@
       class="is-hidden-tablet title is-size-1-mobile has-text-black"
     > Notes
       <span class="title-serif">& Scribbles</span></h2>
-    <hr />
     <h2
       class="is-hidden-mobile title has-text-black" style="font-size: 4rem"
     >

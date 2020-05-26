@@ -4,7 +4,7 @@
       class="is-hidden-tablet title is-size-1-mobile has-text-black"
     > Work
       <span class="title-serif">& Projects</span></h2>
-    <hr />
+   
     <h2
       class="is-hidden-mobile title has-text-black" style="font-size: 4rem"
     >
