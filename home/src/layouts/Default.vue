@@ -538,6 +538,7 @@ body {
 
 .is-size-0 {
   font-size: 4rem !important;
+  line-height: 1.125 !important; 
 }
 
 .box-x {
