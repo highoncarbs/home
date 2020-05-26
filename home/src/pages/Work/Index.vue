@@ -1,9 +1,16 @@
 <template>
   <Layout class="sans">
-    <h2 class="title is-size-1-mobile has-text-weight-medium title-text has-text-black">
-      Work
-      <span class="title-serif">& Projects</span>
-    </h2>
+    <h2
+      class="is-hidden-tablet title is-size-1-mobile has-text-black"
+    > Work
+      <span class="title-serif">& Projects</span></h2>
+    <hr />
+    <h2
+      class="is-hidden-mobile title has-text-black" style="font-size: 4rem"
+    >
+    Work
+      <span class="title-serif">& Projects</span></h2>
+  
     <hr />
     <br />
     <h2 class="title is-size-1 is-size-2-mobile has-text-weight-medium has-text-grey">Selected</h2>

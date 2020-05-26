@@ -1,9 +1,16 @@
 <template>
   <Layout>
-    <h2 class="title is-size-1-mobile has-text-weight-medium title-text has-text-black">
-      Notes
-      <span class="title-serif">& Scribbles</span>
-    </h2>
+    <h2
+      class="is-hidden-tablet title is-size-1-mobile has-text-black"
+    > Notes
+      <span class="title-serif">& Scribbles</span></h2>
+    <hr />
+    <h2
+      class="is-hidden-mobile title has-text-black" style="font-size: 4rem"
+    >
+    Notes
+      <span class="title-serif">& Scribbles</span></h2>
+  
     <hr />
 
     <div v-for="post in $page.posts.edges" :key="post.id" style="margin-top:2rem;">
