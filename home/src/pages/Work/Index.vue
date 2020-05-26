@@ -1,6 +1,6 @@
 <template>
   <Layout class="sans">
-    <h2 class="title is-size-1-mobile has-text-weight-medium title-text has-text-black">
+    <h2 class="title is-size-1-mobile has-text-weight-medium this-should-be-big has-text-black">
       Work
       <span class="title-serif">& Projects</span>
     </h2>

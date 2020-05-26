@@ -191,7 +191,7 @@
           </a>
         </div>
         <div class="column sans is-6-fullhd is-8-desktop is-offset-1-tablet">
-          <h1 class="title-text is-size-1-mobile modern is-uppercase has-text-white">NOW PLAYING</h1>
+          <h1 class="this-should-be-big is-size-1-mobile modern is-uppercase has-text-white">NOW PLAYING</h1>
           <p class="has-text-white title">{{music_data[curr_idx].title}}</p>
           <p class="subtitle">{{music_data[curr_idx].desc}}</p>
           <div
@@ -544,7 +544,7 @@ body {
   font-family: "Fivo Sans" !important;
 }
 
-.title-text {
+.this-should-be-big {
   font-size: 4rem !important;
   line-height: 1.125 !important;
 }
@@ -587,23 +587,6 @@ body {
 
 .box-pr img {
   border-radius: 7px !important;
-}
-
-@media only screen and (min-width: 1200px) {
-  .title-text {
-    line-height: 1.125rem !important;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .title-text {
-    line-height: 1.125rem !important;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .title-text {
-    line-height: 1.125rem !important;
-  }
 }
 
 .has-equal-height {
