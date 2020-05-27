@@ -1,96 +1,32 @@
 <template>
-  <Layout class="sans">
-    <h2
-      class="is-hidden-tablet title is-size-1-mobile has-text-black"
-    > Work
-      <span class="title-serif">& Projects</span></h2>
-   
-    <h2
-      class="is-hidden-mobile title has-text-black" style="font-size: 4rem"
-    >
-    Work
-      <span class="title-serif">& Projects</span></h2>
-  
-    <hr />
-    <br />
-    <h2 class="title is-size-1 is-size-2-mobile has-text-weight-medium has-text-grey">Selected</h2>
+  <Layout>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <h2 class="title has-text-black has-text-centered" style="font-size: 4rem">
+          Work
+          <span class="has-text-grey">+</span> Projects
+        </h2>
 
-    <div class="columns is-multiline">
-      <div class="column is-4-fullhd is-6-desktop">
-        <div class="card box-pr has-equal-height">
-          <div class="card-content">
-            <p class="modern is-size-4 has-text-black">AUTOMATO</p>
-            <p class="tag is-info is-light">OPENSOURCE</p>
-            <br />
-            <br />
-            <p class="is-size-5">
-              Marketing Campaigns
-              via Whatsapp.
-              With built in scrapers* for Google & B2B Portals.
-            </p>
-          </div>
-          <div class="card-footer" style="padding: 1rem">
-            <a href="https://github.com/highoncarbs/automato" class="button is-fullwidth">
-              <span>View Project</span>
-              <ClientOnly>
-              <box-icon type="solid" name="right-arrow-alt"></box-icon></ClientOnly>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="column is-4-fullhd is-6-desktop">
-        <div class="card box-pr has-equal-height">
-          <div class="card-content">
-            <p class="modern is-size-4 has-text-black">HAFTA</p>
-            <p class="tag is-info is-light">OPENSOURCE</p>
-            <br />
-            <br />
-            <p class="is-size-5">Payroll & HR for MSME's</p>
-          </div>
-          <div class="card-footer" style="padding: 1rem">
-            <a href="https://github.com/highoncarbs/hafta" class="button is-fullwidth">
-              <span>View Project</span>
-              <ClientOnly>
-              <box-icon type="solid" name="right-arrow-alt"></box-icon></ClientOnly>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="column is-4-fullhd is-6-desktop">
-        <div class="card box-pr has-equal-height">
-          <div class="card-content">
-            <p class="modern is-size-4 has-text-black">STOREFRONT</p>
-            <p class="tag is-info is-light">OPENSOURCE</p>
-            <br />
-            <br />
-            <p
-              class="is-size-5"
-            >Shopify Product upload on steroids. Bulk product uploads to your shopify store.</p>
-          </div>
-          <div class="card-footer" style="padding: 1rem">
-            <a href="https://github.com/highoncarbs/storefront" class="button is-fullwidth">
-              <span>View Project</span>
-              <ClientOnly>
-              <box-icon type="solid" name="right-arrow-alt"></box-icon></ClientOnly>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="column is-4-fullhd is-6-desktop">
-        <div class="card box-pr has-equal-height">
-          <div class="card-content">
-            <p class="modern is-size-4 has-text-black">SHORTY</p>
-            <p class="tag is-info is-light">OPENSOURCE</p>
-            <br />
-            <br />
-            <p class="is-size-5">URL Shorter & analytics tool . Built as an alternative to bit.ly.</p>
-          </div>
-          <div class="card-footer" style="padding: 1rem">
-            <a href="https://github.com/highoncarbs/shorty" class="button is-fullwidth">
-              <span>View Project</span>
-              <ClientOnly>
-              <box-icon type="solid" name="right-arrow-alt"></box-icon></ClientOnly>
-            </a>
+        <hr />
+        <br />
+        <!-- <h2 class="title is-size-1 is-size-2-mobile has-text-weight-medium has-text-grey">Selected</h2> -->
+
+        <div class="columns is-multiline">
+          <div class="column is-4-fullhd is-6-desktop" v-for="item in work" :key="item.title">
+            <div class="card card-x has-equal-height">
+              <div class="card-content">
+                <p class="modern is-size-4 has-text-black">{{ item.title}}</p>
+                <p class="tag is-info is-light">{{item.tag}}</p>
+                <br />
+                <br />
+                <p class="is-size-5 has-text-black">{{ item.desc }}</p>
+              </div>
+              <div class="card-footer" style="padding: 1rem">
+                <a :href="item.link" class="button is-text has-text-link is-fullwidth">
+                  <span>View Project</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -103,10 +39,39 @@
 export default {
   metaInfo: {
     title: "Work"
+  },
+  data() {
+    return {
+      work: [
+        {
+          title: "Automato",
+          tag: "OPENSOURCE",
+          desc:
+            " Marketing Campaigns via Whatsapp & SMS. With built in scrapers for Google & B2B Portals.",
+          link: "https://github.com/highoncarbs/automato"
+        },
+        {
+          title: "Hafta",
+          tag: "OPENSOURCE",
+          desc: "Payroll & HR for Indian SMBs with flexible tax deductions",
+          link: "https://github.com/highoncarbs/hafta"
+        },
+        {
+          title: "Storefront",
+          tag: "OPENSOURCE",
+          desc:
+            "Shopify Product upload on steroids. Bulk product uploads to your shopify store",
+          link: "https://github.com/highoncarbs/storefront"
+        },
+        {
+          title: "Shorty",
+          tag: "OPENSOURCE",
+          desc:
+            "URL Shorter with analytics . Built as an alternative to bit.ly for marketing campaigns.",
+          link: "https://github.com/highoncarbs/shorty"
+        }
+      ]
+    };
   }
 };
 </script>
-
-<style>
-
-</style>
