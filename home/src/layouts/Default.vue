@@ -178,38 +178,44 @@ section,
 nav,
 .card,
 .level {
-  font-family: "Franklin Gothic", 'Helvetica Neue',"Roboto Condensed", Helvetica , "Arial Narrow", Arial,sans-serif;
+  font-family: "Franklin Gothic", "Helvetica Neue", "Roboto Condensed",
+    Helvetica, "Arial Narrow", Arial, sans-serif;
 }
 
 @font-face {
   font-family: "Source Serif Pro";
   src: url("../assets/fonts/SourceSerifPro-Regular.woff");
+  font-display: swap;
 }
 @font-face {
   font-family: "Source Serif Pro Light";
   src: url("../assets/fonts/SourceSerifPro-Light.woff");
+  font-display: swap;
 }
 @font-face {
   font-family: "Source Serif Pro Light Italic";
   src: url("../assets/fonts/SourceSerifPro-LightIt.otf");
   font-weight: 200;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Source Serif Pro Italic";
   src: url("../assets/fonts/SourceSerifPro-It.otf");
+  font-display: swap;
   font-weight: 400i;
 }
 @font-face {
   font-family: "Franklin Gothic";
   src: url("../assets/fonts/FranklinGothic-Medium.woff");
+  font-display: swap;
 }
 .content {
-  font-family: "Source Serif Pro" ,'Georgia' , serif !important;
+  font-family: "Source Serif Pro", Georgia, serif !important;
 }
 .content blockquote {
-  font-family: "Source Serif Pro Italic" , serif!important;
-  font-style: italic ;
+  font-family: "Source Serif Pro Italic", serif !important;
+  font-style: italic;
 }
 
 .has-equal-height {

@@ -109,18 +109,18 @@ export default {
   },
   data() {
     return {
-      work: [
+     work: [
         {
           title: "Automato",
           tag: "OPENSOURCE",
           desc:
-            " Marketing Campaigns via Whatsapp. With built in scrapers* for Google & B2B Portals.",
+            " Marketing Campaigns via Whatsapp & SMS. With built in scrapers for Google & B2B Portals.",
           link: "https://github.com/highoncarbs/automato"
         },
         {
           title: "Hafta",
           tag: "OPENSOURCE",
-          desc: "Payroll & HR for MSME's",
+          desc: "Payroll & HR for Indian SMBs with flexible tax deductions",
           link: "https://github.com/highoncarbs/hafta"
         },
         {
@@ -134,7 +134,7 @@ export default {
           title: "Shorty",
           tag: "OPENSOURCE",
           desc:
-            "URL Shorter & analytics tool . Built as an alternative to bit.ly.",
+            "URL Shorter with analytics . Built as an alternative to bit.ly for marketing campaigns.",
           link: "https://github.com/highoncarbs/shorty"
         }
       ]
