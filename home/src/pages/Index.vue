@@ -2,19 +2,22 @@
   <Layout>
     <div class="columns is-centered">
       <div class="column is-8">
-        <h2 class="has-text-weight-light has-text-uppercase title has-text-black" style="font-size: 4rem; font-family: 'Source Serif Pro Light">
-          I juggle with chars & pixels to make <span style=" font-family: 'Source Serif Pro Light Italic ;font-weight: 300i;">Indian SMB's
-            </span> efficent AF!
+        <h2
+          class="has-text-weight-light has-text-uppercase title has-text-black"
+          style="font-size: 4rem; font-family: 'Source Serif Pro Light"
+        >
+          I juggle with chars & pixels to make
+          <span
+            style=" font-family: 'Source Serif Pro Light Italic ;font-weight: 300i;"
+          >Indian SMB's</span> efficent AF!
         </h2>
         <hr />
 
         <h2
-          class="subtitle has-text-weight-normal is-size-2 "
+          class="subtitle has-text-weight-normal is-size-2"
         >Currently building Production & Inventory ERP System for Textile manufacturers</h2>
 
-        <a href="https://twitter.com/highoncaarbs" class="button is-info">
-          Discuss on Twitter
-        </a>
+        <a href="https://twitter.com/highoncaarbs" class="button is-info">Discuss on Twitter</a>
         <hr />
         <br />
 
@@ -44,7 +47,6 @@
               <div class="card-footer" style="padding: 1rem">
                 <a :href="item.link" class="button is-text has-text-link is-fullwidth">
                   <span>View Project</span>
-                 
                 </a>
               </div>
             </div>
@@ -68,7 +70,7 @@
         <div v-for="post in $page.posts.edges.slice(0 , 5)" :key="post.id" style="margin-top:2rem;">
           <g-link :to="post.node.path" v-if="post.node.tags != 'draftd'">
             <p class="title has-text-weight-medium is-size-4">{{ post.node.title }}</p>
-            <p class="subtitle  has-text-grey is-size-6">
+            <p class="subtitle has-text-grey is-size-6">
               {{ getDateString(post.node.date).toUpperCase() }}
               <span
                 v-if="post.node.tags == 'DRAFT'"
@@ -109,7 +111,7 @@ export default {
   },
   data() {
     return {
-     work: [
+      work: [
         {
           title: "Automato",
           tag: "OPENSOURCE",
