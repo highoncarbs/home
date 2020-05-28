@@ -195,7 +195,6 @@ nav,
 @font-face {
   font-family: "Source Serif Pro Light Italic";
   src: url("../assets/fonts/SourceSerifPro-LightIt.otf");
-  font-weight: 200;
   font-display: swap;
 }
 
@@ -203,7 +202,6 @@ nav,
   font-family: "Source Serif Pro Italic";
   src: url("../assets/fonts/SourceSerifPro-It.otf");
   font-display: swap;
-  font-weight: 400i;
 }
 @font-face {
   font-family: "Franklin Gothic";
@@ -214,8 +212,16 @@ nav,
   font-family: "Source Serif Pro", Georgia, serif !important;
 }
 .content blockquote {
-  font-family: "Source Serif Pro Italic", serif !important;
+  font-family: "Source Serif Pro Italic", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
   font-style: italic;
+}
+
+.serif-light{
+  font-family: "Source Serif Pro Light", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+
+}
+.serif-it{
+  font-family: "Source Serif Pro Light Italic", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
 }
 
 .has-equal-height {

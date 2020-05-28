@@ -3,18 +3,17 @@
     <div class="columns is-centered">
       <div class="column is-8">
         <h2
-          class="has-text-weight-light has-text-uppercase title has-text-black"
-          style="font-size: 4rem; font-family: 'Source Serif Pro Light"
+          class="has-text-weight-light is-size-1-mobile has-text-uppercase title has-text-black serif-light"
+          style="font-size: 4rem;"
         >
           I juggle with chars & pixels to make
-          <span
-            style=" font-family: 'Source Serif Pro Light Italic ;font-weight: 300i;"
+          <span class="serif-it"
           >Indian SMB's</span> efficent AF!
         </h2>
         <hr />
 
         <h2
-          class="subtitle has-text-weight-normal is-size-2"
+          class="subtitle has-text-weight-normal is-size-2 is-size-3-mobile"
         >Currently building Production & Inventory ERP System for Textile manufacturers</h2>
 
         <a href="https://twitter.com/highoncaarbs" class="button is-info">Discuss on Twitter</a>
