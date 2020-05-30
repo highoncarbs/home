@@ -18,13 +18,11 @@ I'll be deep diving into each of the verticals listed below and what I've worked
 
 My main focus will be on the following sections of 
 
-Awareness / Marketing
+1. Awareness / Marketing
+2. Sales Channels & Sales
+3. Operations / Production
 
-Sales Channels & Sales
-
-Operations / Production
-
-## Marketing / Awareness
+## **Marketing / Awareness**
 
 In the usual ways of marketing were print ads , exhibitions and broker relations . Apart from the usual ones there is social media and online marketing , which very few have adapted to and used them efficiently.\
 Everyone knows Facebook , Instagram & Google Ads as the top marketing platforms online.\
