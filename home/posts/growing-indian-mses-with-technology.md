@@ -1,6 +1,8 @@
 ---
-title: Growing Hacking Indian SMBs in 2020 ~ plus 5 years
-excerpt: Growth Hacking Indian MSE's
+title: Growth Hacking Indian SMBs in 2020 ~ plus 5 years
+excerpt: >-
+  Growth Hacking Indian MSE's using Social Media platforms , SEO and Google
+  Business
 date: 2019-12-17T13:22:16.341Z
 tags: DRAFT
 ---
@@ -22,7 +24,7 @@ My main focus will be on the following sections of
 2. Sales Channels & Sales
 3. Operations / Production
 
-## **Marketing / Awareness**
+# Marketing / Awareness
 
 In the usual ways of marketing were print ads , exhibitions and broker relations . Apart from the usual ones there is social media and online marketing , which very few have adapted to and used them efficiently.\
 Everyone knows Facebook , Instagram & Google Ads as the top marketing platforms online.\
