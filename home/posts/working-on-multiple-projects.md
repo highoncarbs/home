@@ -4,7 +4,7 @@ excerpt: How to not get brain fucked when working on multiple projects .
 date: 2020-05-31T21:11:55.259Z
 tags: management
 ---
-Writing long posts is not my forte , so to write more I am shifting to the micro blogging format . \
+Writing long posts is not my forte , so to write more I am shifting to the micro blogging format .
 Alright coming to the topic . 
 
 Right now I have around 7 projects in pipeline , and somehow i am working on 5 of those simultaneously and  they are building out at a good pace.  So i wanted to make a note of how I am currently managing these projects as a future note to myself and also anyone who gets brain fucked when haggling with multiple projects himself.
