@@ -15,6 +15,6 @@ There are only two rules of managing multiple projects ( going for that fight cl
 
 ## \#2 Rule
 
-Then figure out the next project in your pipeline that you want to prioritize , such that you could switch to it if you get too wacked ( yes , I made it up ) working on the first one. And the rest are the lowest priority ones which you work on 2-3 hours a week ( these are mostly websites & e-commerce stores ) .
+Then figure out the next project in your pipeline that you want to prioritize , such that you could switch to it if you get too wacked ( yes , I made it up ) working on the first one. And the rest are the lowest priority ones which you work on 2-3 hours a week ( these are mostly websites & e-commerce stores - for me ) .
 
 Alright then first mini blog is done . So this is how I'm currently working .Have a better management style ? Do share / DM via twitter ~ do some good to the world & me.
