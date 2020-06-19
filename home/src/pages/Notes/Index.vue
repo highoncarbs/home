@@ -64,7 +64,7 @@ export default {
     Read
   },
   metaInfo: {
-    title: "Notes"
+    title: "Journal"
   },
   methods: {
     getDateString(val) {

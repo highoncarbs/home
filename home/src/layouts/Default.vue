@@ -7,7 +7,11 @@
             <g-link to="/" class="is-size-6 has-text-white has-text-weight-semibold">Padam Sethia</g-link>
           </div>
         </div>
-        <div class="level-item mono has-text-white pr-5" >HOME</div>
+        <div
+          class="level-item mono has-text-white pr-5"
+          v-if="$route.path.split('/')[1] != 'work' "
+        >HOME</div>
+        <div class="level-item mono has-text-white pr-5" v-else>WORK</div>
 
         <div class="level-right" @click="show = !show">
           <div class="level-item">
@@ -38,14 +42,23 @@
         <br />
         <div class="columns is-centered has-text-centered">
           <div class="column is-half mt-6">
-            <div class>
-              <div class="level is-mobile pb-4">
+            <div>
+              <div class="level is-multiline pb-4">
                 <a class="level-item has-text-grey" href="https://github.com/highoncarbs">Github ↗</a>
 
-                <a class="level-item has-text-grey" href="https://twitter.com/highoncaarbs">Twitter ↗</a>
+                <a
+                  class="level-item has-text-grey"
+                  href="https://twitter.com/highoncaarbs"
+                >Twitter ↗</a>
 
-                <a class="level-item has-text-grey" href="https://dribbble.com/highoncarbs">Dribbble ↗</a>
-                <a class="level-item has-text-grey" href="https://instagram.com/highoncarbs">Instagram ↗</a>
+                <a
+                  class="level-item has-text-grey"
+                  href="https://dribbble.com/highoncarbs"
+                >Dribbble ↗</a>
+                <a
+                  class="level-item has-text-grey"
+                  href="https://instagram.com/highoncarbs"
+                >Instagram ↗</a>
                 <a class="level-item has-text-grey" href="mailto:padamsethia5@gmail.com">Email ↗</a>
               </div>
             </div>
@@ -63,6 +76,8 @@
                   <a href="https://itminan.in" class="has-text-grey mono">itminan.in ↗</a>
                   <br />
                   <p class="mono mt-3">© 2020 Padam Sethia</p>
+                  <br />
+                  <a @click="gotop()">Rocket Launch 🚀</a>
                 </div>
               </div>
             </div>
@@ -135,7 +150,6 @@ h1 {
   border-radius: 50%;
 }
 
-
 .content blockquote {
   background-color: #fff !important;
   border-left: none !important;
@@ -168,7 +182,7 @@ h1 {
 }
 
 .mono {
-  font-family: "Cousine", 'Roboto Mono' , 'Courier New', Courier, monospace !important;
+  font-family: "Cousine", "Roboto Mono", "Courier New", Courier, monospace !important;
 }
 .card-x {
   border: 1px solid lightgrey;

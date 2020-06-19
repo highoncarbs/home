@@ -44,7 +44,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Work"
+    title: 'Work',
   },
   data() {
     return {

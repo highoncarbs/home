@@ -1,13 +1,13 @@
 <template>
-  <div class=" has-navbar-fixed-top">
+  <div class="has-navbar-fixed-top">
     <section class="section my-0 pt-0">
       <nav class="level is-mobile pt-4">
         <div class="level-left">
           <div class="level-item">
-             <g-link to="/" class="is-size-6 has-text-black has-text-weight-semibold">Padam Sethia</g-link>
+            <g-link to="/" class="is-size-6 has-text-black has-text-weight-semibold">Padam Sethia</g-link>
           </div>
         </div>
-        <div class="level-item mono has-text-black" style="font-spacing:5px;">JOURNAL</div>
+        <div class="level-item mono has-text-black pr-5">JOURNAL</div>
 
         <div class="level-right" @click="show = !show">
           <div class="level-item">
@@ -25,7 +25,7 @@
             <li @click="$router.push('/notes')" style="cursor:pointer">
               <g-link to="/work" class="has-text-black">Journal</g-link>
             </li>
-            <li  style="cursor:pointer">
+            <li style="cursor:pointer">
               <a href="#socials" class="has-text-black">Socials</a>
             </li>
           </ul>
@@ -38,14 +38,23 @@
         <br />
         <div class="columns is-centered has-text-centered">
           <div class="column is-half mt-6">
-            <div class>
-              <div class="level is-mobile pb-4">
-               <a class="level-item has-text-grey" href="https://github.com/highoncarbs">Github ↗</a>
+            <div>
+              <div class="level pb-4">
+                <a class="level-item has-text-grey" href="https://github.com/highoncarbs">Github ↗</a>
 
-                <a class="level-item has-text-grey" href="https://twitter.com/highoncaarbs">Twitter ↗</a>
+                <a
+                  class="level-item has-text-grey"
+                  href="https://twitter.com/highoncaarbs"
+                >Twitter ↗</a>
 
-                <a class="level-item has-text-grey" href="https://dribbble.com/highoncarbs">Dribbble ↗</a>
-                <a class="level-item has-text-grey" href="https://instagram.com/highoncarbs">Instagram ↗</a>
+                <a
+                  class="level-item has-text-grey"
+                  href="https://dribbble.com/highoncarbs"
+                >Dribbble ↗</a>
+                <a
+                  class="level-item has-text-grey"
+                  href="https://instagram.com/highoncarbs"
+                >Instagram ↗</a>
                 <a class="level-item has-text-grey" href="mailto:padamsethia5@gmail.com">Email ↗</a>
               </div>
             </div>
@@ -63,6 +72,8 @@
                   <a href="https://itminan.in" class="has-text-grey mono">itminan.in ↗</a>
                   <br />
                   <p class="mono mt-3">© 2020 Padam Sethia</p>
+                  <br>
+                  <a  @click="gotop()">Rocket Launch 🚀</a>
                 </div>
               </div>
             </div>
@@ -95,7 +106,6 @@ export default {
 };
 </script>
 <style scoped>
-
 .custom-menu {
   position: absolute;
   top: 46px;
