@@ -1,34 +1,40 @@
 <template>
   <Layout>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <h2 class="title has-text-black has-text-centered" style="font-size: 4rem">
-          Work
-          <span class="has-text-grey">+</span> Projects
-        </h2>
-
-        <hr />
-        <br />
-        <!-- <h2 class="title is-size-1 is-size-2-mobile has-text-weight-medium has-text-grey">Selected</h2> -->
-
-        <div class="columns is-multiline">
-          <div class="column is-4-fullhd is-6-desktop" v-for="item in work" :key="item.title">
-            <div class="card card-x has-equal-height">
-              <div class="card-content">
-                <p class="modern is-size-4 has-text-black">{{ item.title}}</p>
-                <p class="tag is-info is-light">{{item.tag}}</p>
-                <br />
-                <br />
-                <p class="is-size-5 has-text-black">{{ item.desc }}</p>
-              </div>
-              <div class="card-footer" style="padding: 1rem">
-                <a :href="item.link" class="button is-text has-text-link is-fullwidth">
-                  <span>View Project</span>
-                </a>
-              </div>
+    <div class="columns is-mobile is-centered has-text-centered">
+      <div class="column is-6-desktop mt-6">
+        <div class>
+          <h1 class="title has-text-white">Work</h1>
+          <p class="has-text-light">Random thougts in no particular order</p>
+          <br />
+          <div>
+            <p class="heading has-text-grey">FOLLOW</p>
+            <div class>
+              <a
+                :href="'https://github.com/highoncarbs'"
+                class="tag is-medium is-dark"
+                style="margin-right:5px"
+              >@highoncarbs</a>
             </div>
           </div>
         </div>
+        <br />
+        <hr style="height: 0.5px ;" class="has-background-grey-dark" />
+        <div v-for="item in work" :key="item.title">
+          <p class="title is-size-4 has-text-white">
+            {{ item.title}}
+            <span class="ml-3 tag is-dark has-text-grey-light">{{item.tag}}</span>
+          </p>
+
+          <br />
+          <p class="is-size-3 has-text-white">{{ item.desc }}</p>
+          <br />
+          <a :href="item.link" class="has-text-success is-size-7 has-text-weight-semibold">
+            <span>View Project →</span>
+          </a>
+          <br />
+          <hr style="height:0.5px; background-color:darkslategray" />
+        </div>
+        <br>
       </div>
     </div>
   </Layout>
@@ -75,3 +81,8 @@ export default {
   }
 };
 </script>
+<style scoped>
+html {
+  background: #0a0a0a;
+}
+</style>

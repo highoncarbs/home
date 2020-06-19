@@ -1,87 +1,42 @@
 <template>
   <Layout>
-    <div class="columns is-centered">
-      <div class="column is-8">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-half mt-6">
+        <br />
+        <h1 class="title has-text-white">
+          Building open-source tools for
+          <span class>Indian businesses</span> to make them efficent AF.
+        </h1>
+        <br />
+        <label for class="label has-text-grey-dark">CURRENTLY</label>
         <h2
-          class="has-text-weight-light is-size-1-mobile has-text-uppercase title has-text-black serif-light"
-          style="font-size: 4rem;"
-        >
-          I juggle with chars & pixels to make
-          <span class="serif-it"
-          >Indian SMB's</span> efficent AF!
-        </h2>
-        <hr />
+          class="title has-text-weight-normal has-text-white is-size-3-mobile"
+        >Working on Inventory & Production management for textile business based in India</h2>
 
-        <h2
-          class="subtitle has-text-weight-normal is-size-2 is-size-3-mobile"
-        >Currently building Production & Inventory ERP System for Textile manufacturers</h2>
+        <br />
+        <g-link to="/notes" class="has-text-weight-bold is-size-6 has-text-grey">🤷‍♀️ Read my random thoughts ↗</g-link>
+        <hr style="height:0.5px; background-color:darkslategray" />
+        <br />
+        <label for class="label has-text-grey-dark">SELECTED WORK</label>
+        <div v-for="item in work" :key="item.title">
+          <p class="title is-size-4 has-text-white">
+            {{ item.title}}
+            <span class="ml-3 tag is-dark has-text-grey-light">{{item.tag}}</span>
+          </p>
 
-        <a href="https://twitter.com/highoncaarbs" class="button is-info">Discuss on Twitter</a>
-        <hr />
-        <br />
-
-        <div class="level is-mobile">
-          <div class="level-left">
-            <div class="level-item">
-              <h2 class="title is-size-1 has-text-centered has-text-black">Work</h2>
-            </div>
-          </div>
-          <div class="level-right">
-            <g-link to="/work" class="level-item">
-              <button class="button is-text has-text-link">View All</button>
-            </g-link>
-          </div>
-        </div>
-        <br />
-        <div class="columns is-multiline">
-          <div class="column is-4-fullhd is-6-desktop" v-for="item in work" :key="item.title">
-            <div class="card card-x has-equal-height">
-              <div class="card-content">
-                <p class="modern is-size-4 has-text-black">{{ item.title}}</p>
-                <p class="tag is-info is-light">{{item.tag}}</p>
-                <br />
-                <br />
-                <p class="is-size-5 has-text-black">{{ item.desc }}</p>
-              </div>
-              <div class="card-footer" style="padding: 1rem">
-                <a :href="item.link" class="button is-text has-text-link is-fullwidth">
-                  <span>View Project</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br />
-        <hr />
-        <br />
-        <div class="level is-mobile">
-          <div class="level-left">
-            <div class="level-item">
-              <h2 class="title is-size-1 has-text-black">Journal</h2>
-            </div>
-          </div>
-          <div class="level-right">
-            <div class="level-item">
-              <g-link to="/notes" class="button is-text has-text-link">View All</g-link>
-            </div>
-          </div>
-        </div>
-        <div v-for="post in $page.posts.edges.slice(0 , 5)" :key="post.id" style="margin-top:2rem;">
-          <g-link :to="post.node.path" v-if="post.node.tags != 'draftd'">
-            <p class="title has-text-weight-medium is-size-4">{{ post.node.title }}</p>
-            <p class="subtitle has-text-grey is-size-6">
-              {{ getDateString(post.node.date).toUpperCase() }}
-              <span
-                v-if="post.node.tags == 'DRAFT'"
-              >
-                -
-                <span class="is-warning tag has-text-weight-semibold" v-html="post.node.tags" />
-              </span>
-            </p>
-          </g-link>
+          <br />
+          <p class="is-size-3 has-text-white">{{ item.desc }}</p>
+          <br />
+          <a :href="item.link" class="has-text-success is-size-7 has-text-weight-semibold">
+            <span>View Project →</span>
+          </a>
+          <br />
+          <hr style="height:0.5px; background-color:darkslategray" />
         </div>
       </div>
     </div>
+
+
   </Layout>
 </template>
 
