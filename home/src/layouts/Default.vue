@@ -168,7 +168,7 @@ h1 {
 }
 
 .mono {
-  font-family: "Cousine" !important;
+  font-family: "Cousine", 'Roboto Mono' , 'Courier New', Courier, monospace !important;
 }
 .card-x {
   border: 1px solid lightgrey;
