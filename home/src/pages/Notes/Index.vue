@@ -1,41 +1,46 @@
 <template>
-  <Read>
-    <div class="columns is-mobile is-centered">
-      <div class="column is-6-desktop mt-6 has-text-centered">
-        <div class="">
-          <h1 class="title">Journal</h1>
+  <Layout>
+    <div class="columns">
+      <div class="column is-10">
+        <div class>
           <p class>Random thougts in no particular order</p>
           <p class>Usually scribbles about Programming, Technology, SMBs.</p>
-          <br />
-          <div>
-            <p class="heading">FOLLOW</p>
-            <div class>
-              <a
-                :href="'https://twitter.com/highoncaarbs'"
-                class="tag is-medium is-info is-light"
-                style="margin-right:5px"
-              >@highoncaarbs</a>
-            </div>
-          </div>
         </div>
-        <br />
-        <div v-for="post in $page.posts.edges" :key="post.id" style="margin-top:2rem;">
-          <g-link :to="post.node.path" v-if="post.node.tags != 'draftd'">
-            <p class="label has-text-grey is-size-6">
-              {{ getDateString(post.node.date).toUpperCase() }}
-              <span
-                v-if="post.node.tags == 'DRAFT'"
-              >
-                
-                <span class="is-warning tag has-text-weight-semibold ml-2" v-html="post.node.tags" />
-              </span>
-            </p>
-            <p class="title has-text-weight-medium is-size-4">{{ post.node.title }}</p>
-          </g-link>
-        </div>
+        <table class="table is-fullwidth mt-6">
+          <colgroup>
+            <col width="10%" />
+            <col width="60%" />
+            <col width="20%" />
+            <col width="20%" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th class=" has-text-grey-light has-text-mono has-text-weight-normal">NO.</th>
+              <th class="has-text-grey-light  has-text-mono has-text-weight-normal">TITLE</th>
+              <th class="has-text-grey-light  has-text-mono has-text-weight-normal">DATE</th>
+              <th class="has-text-grey-light  has-text-mono has-text-weight-normal">TAGGED</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="is-size-6 blog-link"  style="cursor:pointer;padding:2em 1rem;" @click="$router.push(post.node.path)" v-for="(post,idx) in $page.posts.edges" :key="idx">
+              <td>{{idx+1}}</td>
+              <td >{{post.node.title}}</td>
+              <td>
+                {{ getDateString(post.node.date)}}</td>
+              <td>
+                                <span class="has-text-mono is-italic has-text-grey">
+                  
+                {{post.node.tags.toUpperCase()}}
+                </span>
+
+                </td>
+            </tr>
+          </tbody>
+        </table>
+      
       </div>
     </div>
-  </Read>
+  </Layout>
 </template>
 
 <page-query>
@@ -61,10 +66,10 @@ import Read from "~/layouts/Read.vue";
 
 export default {
   components: {
-    Read
+    Read,
   },
   metaInfo: {
-    title: "Journal"
+    title: "Journal",
   },
   methods: {
     getDateString(val) {
@@ -72,9 +77,15 @@ export default {
       return temp.toLocaleDateString("default", {
         day: "numeric",
         month: "short",
-        year: "numeric"
+        year: "numeric",
       });
-    }
-  }
+    },
+  },
 };
 </script>
+
+<style>
+.table{
+  border: none !important;
+}
+</style>

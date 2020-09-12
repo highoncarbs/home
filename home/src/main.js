@@ -14,7 +14,12 @@ export default function (Vue, { router, head, isClient }) {
   })
   head.link.push({
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter&family=Cousine&display=swap",
+    href: "https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;900&display=swap",
+    body: true
+  })
+  head.link.push({
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,700;1,700&display=swap",
     body: true
   })
 

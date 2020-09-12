@@ -1,90 +1,52 @@
 <template>
-  <div class="has-background-black has-navbar-fixed-top">
-    <section class="section my-0 pt-0">
-      <nav class="level is-mobile pt-4">
-        <div class="level-left">
-          <div class="level-item">
-            <g-link to="/" class="is-size-6 has-text-white has-text-weight-semibold">Padam Sethia</g-link>
+  <div class>
+    <div class="section my-0 py-0">
+      <!-- <nav class="navbar mb-0">
+        <div class="container">
+          <div class="navbar-brand">
+            
           </div>
-        </div>
-        <div
-          class="level-item mono has-text-white pr-5"
-          v-if="$route.path.split('/')[1] != 'work' "
-        >HOME</div>
-        <div class="level-item mono has-text-white pr-5" v-else>WORK</div>
-
-        <div class="level-right" @click="show = !show">
-          <div class="level-item">
-            <a class="has-text-white has-text-weight-medium">Menu ↴</a>
+          <div class="navbar-start">
+            <div class="navbar-item">
+              <g-link to="/" class="has-text-weight-semibold has-text-dark">Home</g-link>
+            </div>
+            <div class="navbar-item">
+              <g-link to="/work" class="has-text-weight-semibold has-text-dark">Projects</g-link>
+            </div>
+            <div class="navbar-item">
+              <g-link  to="/work" class="has-text-weight-semibold has-text-dark">Work</g-link>
+            </div>
+            <div class="navbar-item">
+              <g-link to="/notes" class="has-text-weight-semibold has-text-dark">Notes</g-link>
+            </div>
           </div>
+          <div class="navbar-right"></div>
         </div>
-        <div v-if="show" class="custom-menu">
-          <ul>
-            <li @click="$router.push('/')" style="cursor:pointer">
-              <g-link to="/work" class="has-text-white">Home</g-link>
-            </li>
-            <li @click="$router.push('/work')" style="cursor:pointer">
-              <g-link to="/work" class="has-text-white">Work</g-link>
-            </li>
-            <li @click="$router.push('/notes')" style="cursor:pointer">
-              <g-link to="/work" class="has-text-white">Journal</g-link>
-            </li>
-            <li style="cursor:pointer">
-              <a href="#socials" class="has-text-white">Socials</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      </nav> -->
+      <!-- <hr class="my-1" /> -->
+    </div>
+    <section class="section mx-2 my-1">
       <div class="container">
         <slot />
       </div>
-      <footer id="socials" class="has-text-centered">
-        <br />
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-half mt-6">
-            <div>
-              <div class="level is-multiline pb-4">
-                <a class="level-item has-text-grey" href="https://github.com/highoncarbs">Github ↗</a>
-
-                <a
-                  class="level-item has-text-grey"
-                  href="https://twitter.com/highoncaarbs"
-                >Twitter ↗</a>
-
-                <a
-                  class="level-item has-text-grey"
-                  href="https://dribbble.com/highoncarbs"
-                >Dribbble ↗</a>
-                <a
-                  class="level-item has-text-grey"
-                  href="https://instagram.com/highoncarbs"
-                >Instagram ↗</a>
-                <a class="level-item has-text-grey" href="mailto:padamsethia5@gmail.com">Email ↗</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-half">
-            <div class="column">
-              <div class="has-text-white">
-                <div>
-                  <p class="heading">AFTER ∞ iterations</p>
-                  <p>Handcoded by Padam Sethia</p>
-                  <br />
-                  <p class="heading">SHAMELESS PLUG</p>
-                  <a href="https://itminan.in" class="has-text-grey mono">itminan.in ↗</a>
-                  <br />
-                  <p class="mono mt-3">© 2020 Padam Sethia</p>
-                  <br />
-                  <a @click="gotop()">Rocket Launch 🚀</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </section>
+    <footer class="section has-background-white py-3">
+      <div class="container">
+        <div class="level is-mobile">
+          <div class="level-left">
+            <a href="https://github.com/highoncarbs" class="level-item">Github</a>
+            <a href="https://dribbble.com/highoncarbs" class="level-item">Dribbble</a>
+            <a href="https://twitter.com/highoncaarbs" class="level-item">Twitter</a>
+            <a href="https://instagram.com/highoncarbs" class="level-item">Instagram</a>
+            <a href="mailto:padamsethia5@gmail.com" class="level-item">Email</a>
+          </div>
+        </div>
+        <p class="has-text-grey">
+          Some really non-enforceable Rights Reserved.
+          <br />But do you even care ?
+        </p>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -99,52 +61,69 @@ query {
 export default {
   data() {
     return {
-      show: false
+      showMenu: false,
+      show: false,
     };
   },
   methods: {
     gotop() {
       window.scrollTo(0, 0);
-    }
-  }
+    },
+  },
 };
 </script>
 <style>
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 html {
   scroll-behavior: smooth;
 }
 
+.content {
+  display: inline-block;
+}
 .has-image-centered {
   margin-left: auto;
   margin-right: auto;
 }
 
+.is-mono {
+  font-family: "Cousine";
+}
+.menu-bar {
+  position: fixed;
+  transition: 2s -webkit-filter linear;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+}
+.menu {
+  position: sticky;
+  display: inline-block;
+  vertical-align: top;
+  max-height: 100vh;
+  overflow-y: auto;
+  width: 400px;
+  top: 0;
+  bottom: 0;
+
+  border-right: 1px solid #dbdbdb;
+}
 .has-nav-shadow {
   box-shadow: 0 15px 50px lightgrey !important;
 }
 .has-nav-transparent {
   background-color: rgba(0, 0, 0, 0) !important;
 }
-html,
-body,
-.button,
-section,
-nav,
-.card,
-.level {
-  /* background-color: whitesmoke; */
-  font-family: "Inter", Helvetica, Arial, sans-serif !important;
-}
 
-h1 {
-  font-family: "Inter", "Helvetica Neue" Helvetica, Arial, sans-serif !important;
-  /* text-transform: uppercase; */
-  font-weight: 300;
-}
-
-.navbar {
-  font-family: "Inter" !important;
-}
 .img-shadow {
   box-shadow: 0px 5px 20px rgba(225, 225, 225, 0.2);
   border-radius: 50%;
@@ -181,7 +160,7 @@ h1 {
   margin-top: auto;
 }
 
-.mono {
+.has-text-mono {
   font-family: "Cousine", "Roboto Mono", "Courier New", Courier, monospace !important;
 }
 .card-x {
@@ -215,6 +194,37 @@ h1 {
 }
 .custom-menu li a:hover {
   color: #fff !important;
+}
+
+.box-x {
+  border: 1px solid #dbdbdb;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+.box-y {
+  /* border: 1px solid #dbdbdb; */
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.title {
+  font-family: "Gothic A1";
+  font-weight: 900;
+}
+
+.is-size-0 {
+  font-size: 5rem !important;
+}
+
+.has-text-serif {
+  font-family: "Cormorant", Times, serif;
+}
+* {
+  font-family: "Gothic A1";
+}
+
+.has-text-underlined{
+  border-bottom: 1px solid black;
 }
 </style>
 
