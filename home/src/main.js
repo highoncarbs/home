@@ -14,7 +14,7 @@ export default function (Vue, { router, head, isClient }) {
   })
   head.link.push({
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&display=swap",
+    href: "https://fonts.googleapis.com/css2?family=Cousine&family=Libre+Franklin&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap",
     body: true
   })
 

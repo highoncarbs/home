@@ -1,9 +1,26 @@
  <template>
   <Layout>
     <div>
-      <div class="columns is-centered mt-6 is-variable is-8">
+      <div class="columns is-centered">
         <div class="column is-6">
-          <h1 class="is-size-4 has-text-black">
+          <div>
+            <div class="level is-mobile">
+              <div class="level-left">
+                <div class="level-item">
+                  <figure class="image is-128x128">
+                    <g-image class="is-rounded" src="~/assets/meme.jpg" alt />
+                  </figure>
+                </div>
+                <div class="level-item ml-4">
+                  <div>
+                    <h1 class="is-serif is-size-4 has-text-weight-semibold">Padam Sethia</h1>
+                    <h2 class="is-size-5 is-sans">Full Stack Developer</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1 class="mt-6 is-size-4 has-text-black">
             Building
             <span class="has-text-black is-italic">
               <a class="has-text-black" href="https://github.com/highoncarbs">Open Source Software</a>
@@ -20,27 +37,27 @@
               >Good Music</a>
             </span>.
           </h1>
-        </div>
-        <div class="column is-3 is-offset-1">
-          <div class="container">
-            <div class="level is-mobile">
+          <footer class="mt-6">
+            <div class="level">
               <div class="level-left">
-                <a href="https://github.com/highoncarbs" class="level-item has-text-grey">Github</a>
-                <a href="https://dribbble.com/highoncarbs" class="level-item has-text-grey">Dribbble</a>
-                <a href="https://twitter.com/highoncaarbs" class="level-item has-text-grey">Twitter</a>
-                <a
-                  href="https://instagram.com/highoncarbs"
-                  class="level-item has-text-grey"
-                >Instagram</a>
-                <a href="mailto:padamsethia5@gmail.com" class="level-item has-text-grey">Email</a>
+                <div class="level-item has-text-grey">
+                  <a class="is-sans" href="https://github.com/highoncarbs">Github</a>
+                </div>
+                <div class="level-item">
+                  <a class="is-sans" href="https://dribbble.com/highoncarbs">Dribbble</a>
+                </div>
+                <div class="level-item">
+                  <a class="is-sans" href="https://twitter.com/highoncaarbs">Twitter</a>
+                </div>
+                <div class="level-item">
+                  <a class="is-sans" href="https://instagram.com/highoncarbs">Instagram</a>
+                </div>
+                <div class="level-item">
+                  <a class="is-sans" href="mailto:padamsethia5@gmail.com">Email</a>
+                </div>
               </div>
             </div>
-            <hr style="height:0.5px; background-color:#dbdbdb" />
-            <p class="has-text-grey">
-              Some really non-enforceable Rights Reserved.
-              <br />But do you even care ?
-            </p>
-          </div>
+          </footer>
         </div>
       </div>
     </div>
@@ -50,7 +67,7 @@
 
 <page-query>
 
-}
+
 </page-query>
 
 
